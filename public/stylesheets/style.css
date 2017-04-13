@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.exmple {
+  width: 165px;
+  height: 23px;
+  margin: 100px auto;
+  background: #78decd;
+  padding: 15px 15px;
+}
