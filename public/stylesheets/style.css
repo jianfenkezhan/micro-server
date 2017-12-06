@@ -9,7 +9,12 @@ a {
 .exmple {
   width: 165px;
   height: 23px;
-  margin: 100px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   background: #78decd;
   padding: 15px 15px;
 }

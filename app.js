@@ -1,19 +1,22 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var config = require("./config/index");
+var os = require('os');
+
 const nunjucks = require('nunjucks');
 
 const app = global.app = express()
-
+const IP = os.networkInterfaces();
 // view setting
 const viewPath = path.join(__dirname, config.viewPath);
 
 // view engine setup
 app.set("env", config.env)
+app.set("serverId", IP.en0[1].address)
 app.set('views', viewPath);
 // app.set('view engine', 'html');
 
